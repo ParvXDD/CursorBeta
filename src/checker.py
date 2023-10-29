@@ -358,7 +358,7 @@ class simplechecker():
                         self.tempbannedlist.append(acc)
                         with open(f'{self.outpath}/tempbanned.txt', 'a', encoding='UTF-8') as file:
                             file.write(f'''
-╔═════════════════════════════════════════════════════════════╗
+╔〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄╗
 ║            | {account.logpass} |{space*(49-len(f'| {account.logpass} |'))}║
 ║ Banned until {banuntil}{space*(61-len(f' Banned until {banuntil}'))}║
 ║                                                             ║
@@ -369,7 +369,7 @@ class simplechecker():
 ║ Gamename: {account.gamename}#{account.tagline}{space*(61-len(f' Gamename: {account.gamename}#{account.tagline}'))}║
 ╠═════════════════════════════════════════════════════════════╣
 {skinsformatted}
-╚═════════════════════════════════════════════════════════════╝
+╚〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄╝
 ''')
                     else:
                         # with open(f'{self.parentpath}/output/valid.json','r+',encoding='utf-8') as f:
@@ -382,7 +382,7 @@ class simplechecker():
                         #    f.truncate()
                         with open(f'{self.outpath}/valid.txt', 'a', encoding='UTF-8') as file:
                             file.write(f'''
-╔═════════════════════════════════════════════════════════════╗
+╔〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄╗
 ║            | {account.logpass} |{space*(49-len(f'| {account.logpass} |'))}║
 ║                                                             ║
 ║                                                             ║
@@ -393,7 +393,7 @@ class simplechecker():
 ║ Gamename: {account.gamename}#{account.tagline}{space*(61-len(f' Gamename: {account.gamename}#{account.tagline}'))}║
 ╠═════════════════════════════════════════════════════════════╣
 {skinsformatted}
-╚═════════════════════════════════════════════════════════════╝
+╚〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄╝
 ''')
                     # sort
                     if banuntil == None:
@@ -409,7 +409,7 @@ class simplechecker():
                             os.mkdir(f'{self.outpath}/regions/{reg}/')
                         with open(f'{self.outpath}/regions/{reg}/{sysrank}.txt', 'a', encoding='UTF-8') as file:
                             file.write(f'''
-╔═════════════════════════════════════════════════════════════╗
+╔〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄╗
 ║            | {account.logpass} |{space*(49-len(f'| {account.logpass} |'))}║
 ║{bantext}{space*(61-len(bantext))}║
 ║                                                             ║
@@ -420,7 +420,7 @@ class simplechecker():
 ║ Gamename: {account.gamename}#{account.tagline}{space*(61-len(f' Gamename: {account.gamename}#{account.tagline}'))}║
 ╠═════════════════════════════════════════════════════════════╣
 {skinsformatted}
-╚═════════════════════════════════════════════════════════════╝
+╚〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄╝
 ''')
                     if skinscount > 0 and reg != 'N/A' and banuntil == None:
                         if not exists(f'{self.outpath}/skins/'):
@@ -441,7 +441,7 @@ class simplechecker():
                             os.mkdir(path)
                         with open(f'{path}/{reg}.txt', 'a', encoding='UTF-8') as file:
                             file.write(f'''
-╔═════════════════════════════════════════════════════════════╗
+╔〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄╗
 ║            | {account.logpass} |{space*(49-len(f'| {account.logpass} |'))}║
 ║                                                             ║
 ║                                                             ║
@@ -452,7 +452,7 @@ class simplechecker():
 ║ Gamename: {account.gamename}#{account.tagline}{space*(61-len(f' Gamename: {account.gamename}#{account.tagline}'))}║
 ╠═════════════════════════════════════════════════════════════╣
 {skinsformatted}
-╚═════════════════════════════════════════════════════════════╝
+╚〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄╝
 ''')
             except Exception as e:
                 with open(f'{self.parentpath}/log.txt', 'a', errors='replace', encoding='utf-8') as f:
@@ -501,17 +501,17 @@ class simplechecker():
                 {sys.progressbar(self.checked,self.count)}
     {reset}
 {cyan} ┏━ Main ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ ┏━━ Regions ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ ┏━━ Skins ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-{cyan} ┃ [{reset}>{cyan}] {reset}Valid          >>:{cyan}[{green}{self.valid}{cyan}] ({percent}){space * (9 - len(str(self.valid))-len(percent))}┃ ┃ [{reset}>{cyan}] {reset}EU            >>:{cyan}[{green}{self.regions['eu']}{cyan}]{space * (18 - len(str(self.regions['eu'])))}┃ ┃ [{reset}>{cyan}] {reset}1-10            >>:{cyan}[{green}{self.skinsam['1-10']}{cyan}]{space * (29 - len(str(self.skinsam['1-10'])))}┃
-{cyan} ┃ [{reset}>{cyan}] {reset}Banned         >>:{cyan}[{red}{self.banned}{cyan}]{space * (12 - len(str(self.banned)))}┃ ┃ [{reset}>{cyan}] {reset}NA            >>:{cyan}[{green}{self.regions['na']}{cyan}]{space * (18 - len(str(self.regions['na'])))}┃ ┃ [{reset}>{cyan}] {reset}10-20           >>:{cyan}[{green}{self.skinsam['10-20']}{cyan}]{space * (29 - len(str(self.skinsam['10-20'])))}┃
-{cyan} ┃ [{reset}>{cyan}] {reset}TempBanned     >>:{cyan}[{Fore.YELLOW}{self.tempbanned}{cyan}]{space * (12 - len(str(self.tempbanned)))}┃ ┃ [{reset}>{cyan}] {reset}AP            >>:{cyan}[{green}{self.regions['ap']}{cyan}]{space * (18 - len(str(self.regions['ap'])))}┃ ┃ [{reset}>{cyan}] {reset}20-35           >>:{cyan}[{green}{self.skinsam['20-35']}{cyan}]{space * (29 - len(str(self.skinsam['20-35'])))}┃
-{cyan} ┃ [{reset}>{cyan}] {reset}Riot Limits    >>:{cyan}[{red}{self.rlimits}{cyan}]{space * (12 - len(str(self.rlimits)))}┃ ┃ [{reset}>{cyan}] {reset}BR            >>:{cyan}[{green}{self.regions['br']}{cyan}]{space * (18 - len(str(self.regions['br'])))}┃ ┃ [{reset}>{cyan}] {reset}35-40           >>:{cyan}[{green}{self.skinsam['35-40']}{cyan}]{space * (29 - len(str(self.skinsam['35-40'])))}┃
-{cyan} ┃ [{reset}>{cyan}] {reset}Errors         >>:{cyan}[{red}{self.err}{cyan}]{space * (12 - len(str(self.err)))}┃ ┃ [{reset}>{cyan}] {reset}KR            >>:{cyan}[{green}{self.regions['kr']}{cyan}]{space * (18 - len(str(self.regions['kr'])))}┃ ┃ [{reset}>{cyan}] {reset}40-70           >>:{cyan}[{green}{self.skinsam['40-70']}{cyan}]{space * (29 - len(str(self.skinsam['40-70'])))}┃
-{cyan} ┃ [{reset}>{cyan}] {reset}Retries        >>:{cyan}[{Fore.YELLOW}{self.retries}{cyan}]{space * (12 - len(str(self.retries)))}┃ ┃ [{reset}>{cyan}] {reset}LATAM         >>:{cyan}[{green}{self.regions['latam']}{cyan}]{space * (18 - len(str(self.regions['latam'])))}┃ ┃ [{reset}>{cyan}] {reset}70+             >>:{cyan}[{green}{self.skinsam['70+']}{cyan}]{space * (29 - len(str(self.skinsam['70+'])))}┃
+{cyan} ┃ [{reset}>{yellow}] {reset}Valid          >>:{cyan}[{green}{self.valid}{cyan}] ({percent}){space * (9 - len(str(self.valid))-len(percent))}┃ ┃ [{reset}>{cyan}] {reset}EU            >>:{cyan}[{green}{self.regions['eu']}{cyan}]{space * (18 - len(str(self.regions['eu'])))}┃ ┃ [{reset}>{cyan}] {reset}1-10            >>:{cyan}[{green}{self.skinsam['1-10']}{cyan}]{space * (29 - len(str(self.skinsam['1-10'])))}┃
+{cyan} ┃ [{reset}>{blue}] {reset}Banned         >>:{cyan}[{red}{self.banned}{cyan}]{space * (12 - len(str(self.banned)))}┃ ┃ [{reset}>{cyan}] {reset}NA            >>:{cyan}[{green}{self.regions['na']}{cyan}]{space * (18 - len(str(self.regions['na'])))}┃ ┃ [{reset}>{cyan}] {reset}10-20           >>:{cyan}[{green}{self.skinsam['10-20']}{cyan}]{space * (29 - len(str(self.skinsam['10-20'])))}┃
+{cyan} ┃ [{reset}>{yellow}] {reset}TempBanned     >>:{cyan}[{Fore.YELLOW}{self.tempbanned}{cyan}]{space * (12 - len(str(self.tempbanned)))}┃ ┃ [{reset}>{cyan}] {reset}AP            >>:{cyan}[{green}{self.regions['ap']}{cyan}]{space * (18 - len(str(self.regions['ap'])))}┃ ┃ [{reset}>{cyan}] {reset}20-35           >>:{cyan}[{green}{self.skinsam['20-35']}{cyan}]{space * (29 - len(str(self.skinsam['20-35'])))}┃
+{cyan} ┃ [{reset}>{red}] {reset}Riot Limits    >>:{cyan}[{red}{self.rlimits}{cyan}]{space * (12 - len(str(self.rlimits)))}┃ ┃ [{reset}>{cyan}] {reset}BR            >>:{cyan}[{green}{self.regions['br']}{cyan}]{space * (18 - len(str(self.regions['br'])))}┃ ┃ [{reset}>{cyan}] {reset}35-40           >>:{cyan}[{green}{self.skinsam['35-40']}{cyan}]{space * (29 - len(str(self.skinsam['35-40'])))}┃
+{cyan} ┃ [{reset}>{blue}] {reset}Errors         >>:{cyan}[{red}{self.err}{cyan}]{space * (12 - len(str(self.err)))}┃ ┃ [{reset}>{cyan}] {reset}KR            >>:{cyan}[{green}{self.regions['kr']}{cyan}]{space * (18 - len(str(self.regions['kr'])))}┃ ┃ [{reset}>{cyan}] {reset}40-70           >>:{cyan}[{green}{self.skinsam['40-70']}{cyan}]{space * (29 - len(str(self.skinsam['40-70'])))}┃
+{cyan} ┃ [{reset}>{greem}] {reset}Retries        >>:{cyan}[{Fore.YELLOW}{self.retries}{cyan}]{space * (12 - len(str(self.retries)))}┃ ┃ [{reset}>{cyan}] {reset}LATAM         >>:{cyan}[{green}{self.regions['latam']}{cyan}]{space * (18 - len(str(self.regions['latam'])))}┃ ┃ [{reset}>{cyan}] {reset}70+             >>:{cyan}[{green}{self.skinsam['70+']}{cyan}]{space * (29 - len(str(self.skinsam['70+'])))}┃
 {cyan} ┃                                     ┃ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ ┃{space * (56 - len(str(self.skinsam['1-10'])))}┃
 {cyan} ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ ┏━━ Ranks ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ ┃{space * (56 - len(str(self.skinsam['1-10'])))}┃
 {cyan} ┏━ Not main ━━━━━━━━━━━━━━━━━━━━━━━━━━┓ ┃ [{reset}>{cyan}] {reset}Unranked      >>:{cyan}[{green}{self.ranks['unranked']}{cyan}]{space * (18 - len(str(self.ranks['unranked'])))}┃ ┃{space * (56 - len(str(self.skinsam['1-10'])))}┃
-{cyan} ┃ [{reset}>{cyan}] {reset}With Skins       >>:{cyan}[{green}{self.skins}{cyan}]{space * (10 - len(str(self.skins)))}┃ ┃ [{reset}>{cyan}] {reset}Iron          >>:{cyan}[{green}{self.ranks['iron']}{cyan}]{space * (18 - len(str(self.ranks['iron'])))}┃ ┃                                                       ┃
-{cyan} ┃ [{reset}>{cyan}] {reset}Unverified Mail  >>:{cyan}[{green}{self.unverifiedmail}{cyan}]{space * (10 - len(str(self.unverifiedmail)))}┃ ┃ [{reset}>{cyan}] {reset}Bronze        >>:{cyan}[{green}{self.ranks['bronze']}{cyan}]{space * (18 - len(str(self.ranks['bronze'])))}┃ ┃                                                       ┃
+{cyan} ┃ [{reset}>{yellow}] {reset}With Skins       >>:{cyan}[{green}{self.skins}{cyan}]{space * (10 - len(str(self.skins)))}┃ ┃ [{reset}>{cyan}] {reset}Iron          >>:{cyan}[{green}{self.ranks['iron']}{cyan}]{space * (18 - len(str(self.ranks['iron'])))}┃ ┃                                                       ┃
+{cyan} ┃ [{reset}>{red}] {reset}Unverified Mail  >>:{cyan}[{green}{self.unverifiedmail}{cyan}]{space * (10 - len(str(self.unverifiedmail)))}┃ ┃ [{reset}>{cyan}] {reset}Bronze        >>:{cyan}[{green}{self.ranks['bronze']}{cyan}]{space * (18 - len(str(self.ranks['bronze'])))}┃ ┃                                                       ┃
 {cyan} ┃                                     ┃ ┃ [{reset}>{cyan}] {reset}Silver        >>:{cyan}[{green}{self.ranks['silver']}{cyan}]{space * (18 - len(str(self.ranks['silver'])))}┃ ┃                                                       ┃
 {cyan} ┃                                     ┃ ┃ [{reset}>{cyan}] {reset}Gold          >>:{cyan}[{green}{self.ranks['gold']}{cyan}]{space * (18 - len(str(self.ranks['gold'])))}┃ ┃                                                       ┃
 {cyan} ┃                                     ┃ ┃ [{reset}>{cyan}] {reset}Platinum      >>:{cyan}[{green}{self.ranks['platinum']}{cyan}]{space * (18 - len(str(self.ranks['platinum'])))}┃ ┃                                                       ┃
