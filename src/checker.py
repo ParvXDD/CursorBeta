@@ -495,12 +495,7 @@ class simplechecker():
         os.system('cls')
         print(f'''
     {reset}
-    {sys.center('.   ____ _   _ ____  ____   ___  ____  
-  / ___| | | |  _ \/ ___| / _ \|  _ \ 
- | |   | | | | |_) \___ \| | | | |_) |
- | |___| |_| |  _ < ___) | |_| |  _ < 
-  \____|\___/|_| \_\____/ \___/|_| \_\
-                                      .')}
+    {sys.center('__CURSOR CHECKER BETA__')}
 
     {sys.center(f'Proxies: {cyan}{self.proxycount}{reset} | Threads:  {cyan}{self.threadam}{reset} | Accounts: {cyan}{self.count}{reset} | Checked {Fore.YELLOW}{self.checked}{reset}/{Fore.YELLOW}{self.count}{reset}')}
                 {sys.progressbar(self.checked,self.count)}
