@@ -495,13 +495,14 @@ class simplechecker():
         os.system('cls')
         print(f'''
     {reset}
-    {sys.center((f''' {green}
- ████ █   █ ████  █████  ███  ████  
-█     █   █ █   █ █     █   █ █   █ 
-█     █   █ ████  █████ █   █ ████  
-█     █   █ █   █     █ █   █ █   █ 
- ████ █████ █   █ █████  ███  █   █ 
-                        Made By ParvXDD'''))}
+    {sys.center(print((f''' {green}
+     ██████╗██╗       ██╗  ███╗  ███╗  ██╗██╗  ██╗
+    ██╔════╝██║  ██╗  ██║ ████║  ████╗ ██║██║  ██║
+    ╚█████╗ ╚██╗████╗██╔╝██╔██║  ██╔██╗██║███████║
+     ╚═══██╗ ████╔═████║ ╚═╝██║  ██║╚████║██╔══██║
+    ██████╔╝ ╚██╔╝ ╚██╔╝ ███████╗██║ ╚███║██║  ██║
+    ╚═════╝   ╚═╝   ╚═╝  ╚══════╝╚═╝  ╚══╝╚═╝  ╚═╝
+                    Version: 2.4 ''')))}
 
     {sys.center(f'Proxies: {cyan}{self.proxycount}{reset} | Threads:  {cyan}{self.threadam}{reset} | Accounts: {cyan}{self.count}{reset} | Checked {Fore.YELLOW}{self.checked}{reset}/{Fore.YELLOW}{self.count}{reset}')}
                 {sys.progressbar(self.checked,self.count)}
@@ -527,6 +528,4 @@ class simplechecker():
 {cyan} 〣                                     〣 [{reset}>{cyan}] {reset}Radiant       >>:{cyan}[{green}{self.ranks['radiant']}{cyan}]{space * (18 - len(str(self.ranks['radiant'])))}〣                                                 
 {cyan} 〣                                     〣 [{reset}>{cyan}] {reset}Locked        >>:{cyan}[{green}{self.locked}{cyan}]{space * (18 - len(str(self.locked)))}〣                                            
 {cyan} 〣⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄〣{reset}
-{Fore.LIGHTCYAN_EX} Checking Will be Completed in : {self.esttime}{reset}
-
-        ''')
+{Fore.LIGHTCYAN_EX} Checking Will be Completed in : {self.esttime}{reset} ''')
