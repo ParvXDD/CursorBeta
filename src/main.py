@@ -84,7 +84,7 @@ class program():
             Separator(),
             'Exit'
         ]
-        print(sys.center('\nhttps://github.com/LIL-JABA/valchecker\n'))
+        print(sys.center('\nhttps://github.com/ParvXDD/CursorBeta.git\n'))
         res = inquirer.select(
             message="Please select an option:",
             choices=menu_choices,
