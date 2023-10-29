@@ -491,11 +491,18 @@ class simplechecker():
         percent = self.valid/self.checked*100 if self.checked != 0 else 0.0
         percent = f'{str(round(percent,1))}%'
         ctypes.windll.kernel32.SetConsoleTitleW(
-            f'ValChecker {self.version}  |  Checked {self.checked}/{self.count}  |  {self.cpmtext} CPM  |  Hitrate {percent}  |  Est. time: {self.esttime}')
+            f'CursorChecker By ParvXDD {self.version}  |  Checked {self.checked}/{self.count}  |  {self.cpmtext} CPM  |  Hitrate {percent}  |  Est. time: {self.esttime}')
         os.system('cls')
         print(f'''
     {reset}
-    {sys.center('𝕮𝖀𝕽𝕾𝕺𝕽')}
+    {sys.center(f''' {green}
+     ██████╗██╗       ██╗  ███╗  ███╗  ██╗██╗  ██╗
+    ██╔════╝██║  ██╗  ██║ ████║  ████╗ ██║██║  ██║
+    ╚█████╗ ╚██╗████╗██╔╝██╔██║  ██╔██╗██║███████║
+     ╚═══██╗ ████╔═████║ ╚═╝██║  ██║╚████║██╔══██║
+    ██████╔╝ ╚██╔╝ ╚██╔╝ ███████╗██║ ╚███║██║  ██║
+    ╚═════╝   ╚═╝   ╚═╝  ╚══════╝╚═╝  ╚══╝╚═╝  ╚═╝
+                    Version: 2.4 ''')}
 
     {sys.center(f'Proxies: {cyan}{self.proxycount}{reset} | Threads:  {cyan}{self.threadam}{reset} | Accounts: {cyan}{self.count}{reset} | Checked {Fore.YELLOW}{self.checked}{reset}/{Fore.YELLOW}{self.count}{reset}')}
                 {sys.progressbar(self.checked,self.count)}
@@ -521,6 +528,6 @@ class simplechecker():
 {cyan} 〣                                     〣 [{reset}>{cyan}] {reset}Radiant       >>:{cyan}[{green}{self.ranks['radiant']}{cyan}]{space * (18 - len(str(self.ranks['radiant'])))}〣                                                 
 {cyan} 〣                                     〣 [{reset}>{cyan}] {reset}Locked        >>:{cyan}[{green}{self.locked}{cyan}]{space * (18 - len(str(self.locked)))}〣                                            
 {cyan} 〣⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄〣{reset}
-{Fore.LIGHTCYAN_EX} Maximum Checking Time: {self.esttime}{reset}
+{Fore.LIGHTCYAN_EX} Checking Will be Completed in : {self.esttime}{reset}
 
         ''')
