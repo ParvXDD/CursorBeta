@@ -87,15 +87,15 @@ class validsort():
             pointer='>'
         ).execute()
 
-        level=str(input('enter minimum level to search ("50" will search all accounts with level 50 or higher) >>>'))
+        level=str(input('Minimum LEVEL (50 Or higher) >>>'))
 
-        skins=str(input('enter how many skins should this account have ("10" will search all accounts with skins amount 10 or higher) >>>'))
+        skins=str(input('Minimum SKINS (10 Or higher) >>>'))
 
-        vp=str(input('enter how many VP should this account have ("1000" will search all accounts with VP amount 1000 or higher) >>>'))
+        vp=str(input('enter how many VP should this account have (1000 Or higher) >>>'))
 
-        rp=str(input('enter how many RP should this account have ("1000" will search all accounts with RP amount 1000 or higher) >>>'))
+        rp=str(input('Minimum RP (1000 Or higher) >>>'))
 
-        skin=str(input('enter what skin should be in this accounts (for example, prime vandal) >>>'))
+        skin=str(input('Name of SKIN (Example, prime vandal) >>>'))
 
         mail = inquirer.select(
             message="full access (mail change):",
