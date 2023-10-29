@@ -494,6 +494,11 @@ class simplechecker():
             f'CursorChecker By ParvXDD {self.version}  |  Checked {self.checked}/{self.count}  |  {self.cpmtext} CPM  |  Hitrate {percent}  |  Est. time: {self.esttime}')
         os.system('cls')
         print(f'''
+ ████ █   █ ████  █████  ███  ████  
+█     █   █ █   █ █     █   █ █   █ 
+█     █   █ ████  █████ █   █ ████  
+█     █   █ █   █     █ █   █ █   █ 
+ ████ █████ █   █ █████  ███  █   █ 
     {reset}
     {sys.center('Cursor')}
 
