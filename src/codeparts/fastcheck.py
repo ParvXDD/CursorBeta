@@ -187,10 +187,10 @@ class fastcheck:
         Proxies: {cyan}{self.proxycount}{reset} | Threads:  {cyan}{self.threadam}{reset} | Accounts: {cyan}{self.count}{reset} | Checked {Fore.YELLOW}{self.checked}{reset}/{Fore.YELLOW}{self.count}{reset}
         {syst.progressbar(self.checked,self.count)}
     {reset}
-                                {Fore.MAGENTA} ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+                                {Fore.MAGENTA} ┏〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄┓
                                 {Fore.MAGENTA} ┃{reset}{Fore.MAGENTA}[{Fore.WHITE}>{Fore.MAGENTA}] {reset}Valid:         {Fore.MAGENTA}{green}{self.valid}{Fore.MAGENTA}{space*(19-len(str(self.valid)))}┃
                                 {Fore.MAGENTA} ┃{reset}{Fore.MAGENTA}[{Fore.WHITE}>{Fore.MAGENTA}] {reset}Riot Limits:   {Fore.MAGENTA}{red}{self.rlimits}{Fore.MAGENTA}{space*(19-len(str(self.rlimits)))}┃
                                 {Fore.MAGENTA} ┃{reset}{Fore.MAGENTA}[{Fore.WHITE}>{Fore.MAGENTA}] {reset}Errors:        {Fore.MAGENTA}{Fore.YELLOW}{self.err}{Fore.MAGENTA}{space*(19-len(str(self.err)))}┃
                                 {Fore.MAGENTA} ┃{reset}{Fore.MAGENTA}[{Fore.WHITE}>{Fore.MAGENTA}] {reset}Retries:       {Fore.MAGENTA}{Fore.BLUE}{self.retries}{Fore.MAGENTA}{space*(19-len(str(self.retries)))}┃
-                                {Fore.MAGENTA} ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ 
+                                {Fore.MAGENTA} ┗〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄┛ 
         ''')
