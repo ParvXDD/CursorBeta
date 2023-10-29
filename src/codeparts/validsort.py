@@ -116,7 +116,7 @@ class validsort():
 
         with open(folder,'r',encoding='UTF-8',errors='ignore') as f:
             text=f.read()
-        accounts=text.split('╔═════════════════════════════════════════════════════════════╗')
+        accounts=text.split('┏〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄┓')
         count=len(accounts)
         #print(count)
         sorted=0
@@ -207,7 +207,7 @@ class validsort():
                 sorted+=1
                 if gothis==True:
                     with open(f'{self.parentpath}/output/sorted.txt','a',encoding='UTF-8') as f:
-                        f.write('╔═════════════════════════════════════════════════════════════╗'+accounttowrite)#####################
+                        f.write('┏〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄〄┓'+accounttowrite)#####################
                     matches+=1
                     print(f'sorted {sorted}/{count} MATCH')
                 else:
