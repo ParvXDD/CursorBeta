@@ -45,26 +45,26 @@ class program():
         os.system('cls')
         codes = vars(colorama.Fore)
         colors = [codes[color] for color in codes if color not in ['BLACK']]
-        colored_name = [random.choice(colors) + char for char in f'ValChecker by liljaba1337']
-        print(sys.get_spaces_to_center('ValChecker by liljaba1337')+(''.join(colored_name))+colorama.Fore.RESET)
+        colored_name = [random.choice(colors) + char for char in f'CursorBeta by ParvXDD']
+        print(sys.get_spaces_to_center('CursorBeta by ParvXDD')+(''.join(colored_name))+colorama.Fore.RESET)
         print(sys.center(f'v{self.version}'))
-        print(sys.center(f'{Fore.YELLOW}Thank you for using ValChecker!'))
-        print(sys.center(f'{Fore.YELLOW}v3.15.2 is the last version of ValChecker released by liljaba in Python'))
-        print(sys.center(f'{Fore.YELLOW}Im currently working on ValChecker4, so I\'ll notify you when it\'s out'))
-        print(sys.center(f'{Fore.YELLOW}This version of ValChecker WILL NOT be supported by me anymore'))
+        print(sys.center(f'{Fore.YELLOW}Thank you for using CursorBeta by ParvXDD!'))
+        print(sys.center(f'{Fore.YELLOW}This is the Beta version of CursorBeta released by ParvXDD in Python'))
+        print(sys.center(f'{Fore.YELLOW}Currently Working on STABLE VERSION, so I\'ll notify you when it\'s out'))
+        print(sys.center(f'{Fore.YELLOW}This version of CursorBeta by ParvXDD is available on Discord Server https://discord.gg/shx9sTaMr9'))
         print()
         r = requests.get('https://api.github.com/repos/lil-jaba/valchecker4')
         try:
             r.json()['message']
         except:
-            print(sys.center(f'{Fore.GREEN}Good news! ValChecker4 is out!'))
-            print(sys.center(f'{Fore.GREEN}Please follow this link to download it:'))
-            print(sys.center(f'{Fore.GREEN}https://github.com/LIL-JABA/valchecker4{Fore.WHITE}'))
+            print(sys.center(f'{Fore.GREEN}Good news! CursorBeta is out!'))
+            print(sys.center(f'{Fore.GREEN}Please join the Discord Server to use!'))
+            print(sys.center(f'{Fore.GREEN}https://discord.gg/shx9sTaMr9{Fore.WHITE}'))
         if 'devtest' in self.version:
-            print(sys.center(f'{Fore.YELLOW}Hi from liljaba'))
+            print(sys.center(f'{Fore.YELLOW}Greetings from ParvXDD'))
         elif 'beta' in self.version:
             print(sys.center(f'{Fore.YELLOW}You have downloaded the BETA version. It can work unstable and contain some bugs.'))
-            print(sys.center(f'Follow https://github.com/LIL-JABA/valchecker/releases/latest to download the latest stable release{Fore.RESET}'))
+            print(sys.center(f'Join https://discord.gg/shx9sTaMr9 to download the latest stable release{Fore.RESET}'))
         elif self.lastver != self.version:
             print(sys.center(
                 f'\nnext version {self.lastver} is available!'))
@@ -116,7 +116,7 @@ class program():
     valchecker v{self.version} by liljaba1337
 
     If you have any questions about valchecker's source code, feel free to ask me in discord
-    https://discord.gg/RzUjzpVXpE (liljaba1338#7206)
+    https://discord.gg/shx9sTaMr9 (itz.ventro)
 
     You can also open pull requests if you have some updates, I will check them all
 
@@ -216,18 +216,18 @@ class program():
         else: 
             valkekersource = None
             ctypes.windll.kernel32.SetConsoleTitleW(
-                f'ValChecker {self.version} by liljaba1337 | Loading Accounts')
+                f'CursorBeta {self.version} by ParvXDD | Loading Accounts')
             print('loading accounts')
             accounts = self.get_accounts()
 
         print('loading assets')
         ctypes.windll.kernel32.SetConsoleTitleW(
-            f'ValChecker {self.version} by liljaba1337 | Loading Assets')
+            f'CursorBeta {self.version} by ParvXDD | Loading Assets')
         sys.load_assets()
 
         print('loading checker')
         ctypes.windll.kernel32.SetConsoleTitleW(
-            f'ValChecker {self.version} by liljaba1337 | Loading Checker')
+            f'CursorBeta {self.version} by ParvXDD | Loading Checker')
         scheck = checker.simplechecker(settings, proxylist, self.version)
         asyncio.run(scheck.main(accounts, self.count, valkekersource))
         return
