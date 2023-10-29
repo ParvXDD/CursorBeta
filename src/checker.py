@@ -496,13 +496,12 @@ class simplechecker():
         print(f'''
     {reset}
     {sys.center((f''' {green}
-     ██████╗██╗       ██╗  ███╗  ███╗  ██╗██╗  ██╗
-    ██╔════╝██║  ██╗  ██║ ████║  ████╗ ██║██║  ██║
-    ╚█████╗ ╚██╗████╗██╔╝██╔██║  ██╔██╗██║███████║
-     ╚═══██╗ ████╔═████║ ╚═╝██║  ██║╚████║██╔══██║
-    ██████╔╝ ╚██╔╝ ╚██╔╝ ███████╗██║ ╚███║██║  ██║
-    ╚═════╝   ╚═╝   ╚═╝  ╚══════╝╚═╝  ╚══╝╚═╝  ╚═╝
-                    Version: 2.4 '''))}
+ ████ █   █ ████  █████  ███  ████  
+█     █   █ █   █ █     █   █ █   █ 
+█     █   █ ████  █████ █   █ ████  
+█     █   █ █   █     █ █   █ █   █ 
+ ████ █████ █   █ █████  ███  █   █ 
+                        Made By ParvXDD'''))}
 
     {sys.center(f'Proxies: {cyan}{self.proxycount}{reset} | Threads:  {cyan}{self.threadam}{reset} | Accounts: {cyan}{self.count}{reset} | Checked {Fore.YELLOW}{self.checked}{reset}/{Fore.YELLOW}{self.count}{reset}')}
                 {sys.progressbar(self.checked,self.count)}
