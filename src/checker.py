@@ -507,8 +507,8 @@ class simplechecker():
 Proxies: {cyan}{self.proxycount}{reset} | Accounts: {cyan}{self.count}{reset} | Checked {Fore.YELLOW}{self.checked}{reset}/{Fore.YELLOW}{self.count}{reset}
     {reset}
 {cyan} 〣⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄〣
-{cyan} 〣 [{reset}⟳{blue}] {reset}Working        ⮞:{cyan}[{green}{self.valid}{cyan}] ({percent}){space * (9 - len(str(self.valid))-len(percent))}〣 [{reset}⟳{cyan}] {reset}EU            ⮞:{cyan}[{green}{self.regions['eu']}{cyan}]{space * (18 - len(str(self.regions['eu'])))}〣
-{cyan} 〣 [{reset}⟳{blue}] {reset}Banned         ⮞:{cyan}[{red}{self.banned}{cyan}]{space * (12 - len(str(self.banned)))}〣 [{reset}⟳{cyan}] {reset}NA            ⮞:{cyan}[{green}{self.regions['na']}{cyan}]{space * (18 - len(str(self.regions['na'])))}〣
+{cyan} 〣 [{reset}⟳{cyan}] {reset}Working        ⮞:{cyan}[{green}{self.valid}{cyan}] ({percent}){space * (9 - len(str(self.valid))-len(percent))}〣 [{reset}⟳{cyan}] {reset}EU            ⮞:{cyan}[{green}{self.regions['eu']}{cyan}]{space * (18 - len(str(self.regions['eu'])))}〣
+{cyan} 〣 [{reset}⟳{cyan}] {reset}Banned         ⮞:{cyan}[{red}{self.banned}{cyan}]{space * (12 - len(str(self.banned)))}〣 [{reset}⟳{cyan}] {reset}NA            ⮞:{cyan}[{green}{self.regions['na']}{cyan}]{space * (18 - len(str(self.regions['na'])))}〣
 {cyan} 〣 [{reset}⟳{cyan}] {reset}TempBanned     ⮞:{cyan}[{Fore.YELLOW}{self.tempbanned}{cyan}]{space * (12 - len(str(self.tempbanned)))}〣 [{reset}⟳{cyan}] {reset}AP            ⮞:{cyan}[{green}{self.regions['ap']}{cyan}]{space * (18 - len(str(self.regions['ap'])))}〣
 {cyan} 〣 [{reset}⟳{cyan}] {reset}Riot Limits    ⮞:{cyan}[{red}{self.rlimits}{cyan}]{space * (12 - len(str(self.rlimits)))}〣 [{reset}⟳{cyan}] {reset}BR            ⮞:{cyan}[{green}{self.regions['br']}{cyan}]{space * (18 - len(str(self.regions['br'])))}〣
 {cyan} 〣 [{reset}⟳{cyan}] {reset}Errors         ⮞:{cyan}[{red}{self.err}{cyan}]{space * (12 - len(str(self.err)))}〣 [{reset}⟳{cyan}] {reset}KR            ⮞:{cyan}[{green}{self.regions['kr']}{cyan}]{space * (18 - len(str(self.regions['kr'])))}〣
