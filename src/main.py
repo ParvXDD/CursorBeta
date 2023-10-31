@@ -88,7 +88,7 @@ class program():
             Separator(),
             'Close Cursor Checker'
         ]
-        print(sys.center(''))
+        print(sys.center(' '))
         res = inquirer.select(
             message="» Select The Feature You Wish To Use:",
             choices=menu_choices,
