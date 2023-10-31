@@ -37,10 +37,10 @@ class program():
 
     def start(self):
         try:
-            print('internet check')
+            print('Cursor Checker is checking Internet Connection')
             requests.get('https://github.com')
         except requests.exceptions.ConnectionError:
-            print('no internet connection')
+            print('No internet connection was detected by Cursor Checker')
             os._exit(0)
         os.system('cls')
         codes = vars(colorama.Fore)
@@ -68,7 +68,7 @@ class program():
             print(sys.center(f'{Fore.YELLOW}Greetings from ParvXDD'))
         elif 'beta' in self.version:
             print(sys.center(f'{Fore.YELLOW}You have downloaded the BETA version. It can work unstable and contain some bugs.'))
-            print(sys.center(f'Join https://discord.gg/shx9sTaMr9 to download the latest stable release{Fore.RESET}'))
+            print(sys.center(f'Join https://discord.gg/cursor to download the latest stable release{Fore.RESET}'))
         elif self.lastver != self.version:
             print(sys.center(
                 f'\nnext version {self.lastver} is available!'))
@@ -79,18 +79,18 @@ class program():
                 os._exit(0)
         menu_choices = [
             Separator(),
-            'Start Checker',
-            'Single-Line Checker',
-            'Edit Settings',
-            'Sort Valid',
-            'Test Proxy',
-            f'Some info for devs',
+            '➤ Start Cursor Checker',
+            '➤ Single-Account Checker',
+            '➤ Edit Cursor Settings',
+            '➤ Sort the Working Accounts',
+            '➤ Test the Selected Proxies',
+            f'https://discord.gg/cursor',
             Separator(),
             'Exit'
         ]
-        print(sys.center('\nhttps://github.com/ParvXDD/CursorBeta.git\n'))
+        print(sys.center('\Welcome to Cursor Checker!\n'))
         res = inquirer.select(
-            message="C🇭‌🇴‌🇴‌🇸‌🇪‌ T🇭‌🇪‌ F🇪‌🇦‌🇹‌🇺‌🇷‌🇪‌ Y🇴‌🇺‌ W🇮‌🇸‌🇭‌ T🇴‌ U🇸‌🇪‌:",
+            message="Choose The Feature You Wish To Use:",
             choices=menu_choices,
             default=menu_choices[0],
             pointer='➤',
@@ -109,7 +109,7 @@ class program():
             pr.start()
         elif res == menu_choices[4]:
             valid.customsort()
-            input('done. press ENTER to exit')
+            input('done. Rress ENTER to exit Cursor Checker')
             pr.start()
         elif res == menu_choices[5]:
             sys.checkproxy()
@@ -135,7 +135,7 @@ class program():
 
     def get_accounts(self):
         root = tkinter.Tk()
-        file = filedialog.askopenfile(parent=root, mode='rb', title='Select the Combos File to be checked (login:password)',
+        file = filedialog.askopenfile(parent=root, mode='rb', title='Select the Accounts File to be checked (login:password)',
                                       filetype=(("txt", "*.txt"), ("All files", "*.txt")))
         root.destroy()
         os.system('cls')
@@ -171,7 +171,7 @@ class program():
         settings = sys.load_settings()
 
         ctypes.windll.kernel32.SetConsoleTitleW(
-            f'Cursor Checker {self.version} by ParvXDD | Loading the Selected Proxies')
+            f'Cursor Checker {self.version} by ParvXDD | Cursor Checker is Loading the Selected Proxies')
         print('Proxies are being loaded in the Checker')
         proxylist = sys.load_proxy()
 
@@ -224,7 +224,7 @@ class program():
             print('Accounts are being loaded in the Checker')
             accounts = self.get_accounts()
 
-        print('loading assets')
+        print('≠ Cursor Checker is Loading the Assets')
         ctypes.windll.kernel32.SetConsoleTitleW(
             f'CursorBeta {self.version} by ParvXDD | Loading the necessary Assets')
         sys.load_assets()
