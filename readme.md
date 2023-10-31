@@ -7,7 +7,7 @@
   CursorBeta
 </h1>
 
-![image](https://media.discordapp.net/attachments/1168940739380641803/1168948007081885787/image.png?ex=65539eaa&is=654129aa&hm=a69047cad363d9b29c95c2fe74b6c838110a31fcf1e9faddf965c5c3eea13c5c&=&width=886&height=572)
+![image](file:///C:/Users/parvt/Downloads/cursor%20checker%20overview.png)
 
 <h2 align="center">
   Python program to check your valorant accounts BY ParvXDD
