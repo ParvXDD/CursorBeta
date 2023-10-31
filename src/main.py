@@ -88,12 +88,12 @@ class program():
             Separator(),
             'Close Cursor Checker'
         ]
-        print(sys.center('Welcome to Cursor Checker!'))
+        print(sys.center(''))
         res = inquirer.select(
             message="» Select The Feature You Wish To Use:",
             choices=menu_choices,
             default=menu_choices[0],
-            pointer='➤',
+            pointer='➠',
             qmark=''
         ).execute()
         if res == menu_choices[1]:
@@ -109,7 +109,7 @@ class program():
             pr.start()
         elif res == menu_choices[4]:
             valid.customsort()
-            input('done. Press ENTER to exit Cursor Checker')
+            input('Done. Press ENTER to exit Cursor Checker')
             pr.start()
         elif res == menu_choices[5]:
             sys.checkproxy()
@@ -167,12 +167,12 @@ class program():
     def main(self):
         ctypes.windll.kernel32.SetConsoleTitleW(
             f'Cursor Checker {self.version} by ParvXDD | Cursor Checker is Loading the Settings')
-        print('Settings are being loaded into the Checker')
+        print('⤄ Cursor Checker is Loading the Settings')
         settings = sys.load_settings()
 
         ctypes.windll.kernel32.SetConsoleTitleW(
             f'Cursor Checker {self.version} by ParvXDD | Cursor Checker is Loading the Selected Proxies')
-        print('Proxies are being loaded in the Checker')
+        print('⤄ Cursor Checker is Loading the Selected Proxies')
         proxylist = sys.load_proxy()
 
         if proxylist == None:
@@ -202,10 +202,10 @@ class program():
                 print(f'{num_proxies} Selected Proxies have been saved to "proxy.txt" file.')
                 proxylist = sys.load_proxy()
             else:
-                print('Cursor Checker is Running without Proxies')
+                print('⇔ Cursor Checker is Running without Proxies')
 
         if inquirer.confirm(
-            message="⥀ Do you wish to check Default Accounts of Cursor Checker!", default=True
+            message="⟳ Do you wish to check Default Accounts of Cursor Checker!", default=True
         ).execute():
             root = tkinter.Tk()
             file = filedialog.askopenfile(parent=root, mode='rb', title='» Select the file which has to be checked (login:password)',
