@@ -159,7 +159,7 @@ class simplechecker():
 
         try:
             self.threadam = int(input(
-                f'➤ Input the Number of Threads for Cursor Checker to Run (Min:1 Max:1000) >>>'))
+                f'➤ Input the Number of Threads for Cursor Checker to Run (Min:1 Max:1000) (Proxies Selected: {self.proxycount}) >>>'))
         except ValueError:
             self.threadam = 1
         self.threadam = self.threadam if 1000 > self.threadam > 0 else self.proxycount if self.proxycount > 1 else 3
