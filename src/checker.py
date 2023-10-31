@@ -513,7 +513,7 @@ Proxies: {cyan}{self.proxycount}{reset} | Accounts: {cyan}{self.count}{reset} | 
 {cyan} 〣 [{reset}⟳{cyan}] {reset}Riot Limits    ⮞:{cyan}[{red}{self.rlimits}{cyan}]{space * (12 - len(str(self.rlimits)))}〣 [{reset}⟳{cyan}] {reset}BR            ⮞:{cyan}[{green}{self.regions['br']}{cyan}]{space * (18 - len(str(self.regions['br'])))}〣
 {cyan} 〣 [{reset}⟳{cyan}] {reset}Errors         ⮞:{cyan}[{red}{self.err}{cyan}]{space * (12 - len(str(self.err)))}〣 [{reset}⟳{cyan}] {reset}KR            ⮞:{cyan}[{green}{self.regions['kr']}{cyan}]{space * (18 - len(str(self.regions['kr'])))}〣
 {cyan} 〣 [{reset}⟳{cyan}] {reset}Retries        ⮞:{cyan}[{Fore.YELLOW}{self.retries}{cyan}]{space * (12 - len(str(self.retries)))}〣 [{reset}⟳{cyan}] {reset}LATAM         ⮞:{cyan}[{green}{self.regions['latam']}{cyan}]{space * (18 - len(str(self.regions['latam'])))}〣
-{cyan} ⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄〣⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄〣 {space * (56 - len(str(self.skinsam['1-10'])))}
+{cyan} 〣⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄〣⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄〣 {space * (56 - len(str(self.skinsam['1-10'])))}
 {cyan} 〣 [{reset}⟳{cyan}] {reset}With Skins       ⮞:{cyan}[{green}{self.skins}{cyan}]{space * (10 - len(str(self.skins)))}〣 [{reset}⟳{cyan}] {reset}Unranked      ⮞:{cyan}[{green}{self.ranks['unranked']}{cyan}]{space * (18 - len(str(self.ranks['unranked'])))}〣 {space * (56 - len(str(self.skinsam['1-10'])))}
 {cyan} 〣 [{reset}⟳{cyan}] {reset}Unverified Mail  ⮞:{cyan}[{green}{self.unverifiedmail}{cyan}]{space * (10 - len(str(self.unverifiedmail)))}〣 [{reset}⟳{cyan}] {reset}Iron          ⮞:{cyan}[{green}{self.ranks['iron']}{cyan}]{space * (18 - len(str(self.ranks['iron'])))}〣
 {cyan} 〣⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄〣 [{reset}⟳{cyan}] {reset}Bronze        >>:{cyan}[{green}{self.ranks['bronze']}{cyan}]{space * (18 - len(str(self.ranks['bronze'])))}〣
@@ -523,8 +523,8 @@ Proxies: {cyan}{self.proxycount}{reset} | Accounts: {cyan}{self.count}{reset} | 
 {cyan} 〣 [{reset}⟳{cyan}] {reset}35-40           ⮞:{cyan}[{green}{self.skinsam['35-40']}{cyan}]{space * (10 - len(str(self.skinsam['35-40'])))} 〣 [{reset}⟳{cyan}] {reset}Diamond       ⮞:{cyan}[{green}{self.ranks['diamond']}{cyan}]{space * (18 - len(str(self.ranks['diamond'])))}〣
 {cyan} 〣 [{reset}⟳{cyan}] {reset}40-70           ⮞:{cyan}[{green}{self.skinsam['40-70']}{cyan}]{space * (10 - len(str(self.skinsam['40-70'])))} 〣 [{reset}⟳{cyan}] {reset}Ascendant     ⮞:{cyan}[{green}{self.ranks['ascendant']}{cyan}]{space * (18 - len(str(self.ranks['ascendant'])))}〣
 {cyan} 〣 [{reset}⟳{cyan}] {reset}70+             ⮞:{cyan}[{green}{self.skinsam['70+']}{cyan}]{space * (10 - len(str(self.skinsam['70+'])))} 〣 [{reset}⟳{cyan}] {reset}Immortal      ⮞:{cyan}[{green}{self.ranks['immortal']}{cyan}]{space * (18 - len(str(self.ranks['immortal'])))}〣
-{cyan} 〣                                     〣 [{reset}⟳{cyan}] {reset}Radiant       ⮞:{cyan}[{green}{self.ranks['radiant']}{cyan}]{space * (18 - len(str(self.ranks['radiant'])))}〣                                                 
-{cyan} 〣                                     〣 [{reset}⟳{cyan}] {reset}Locked        ⮞:{cyan}[{green}{self.locked}{cyan}]{space * (18 - len(str(self.locked)))}〣                                            
+{cyan} 〣                                    〣 [{reset}⟳{cyan}] {reset}Radiant       ⮞:{cyan}[{green}{self.ranks['radiant']}{cyan}]{space * (18 - len(str(self.ranks['radiant'])))}〣                                                 
+{cyan} 〣                                    〣 [{reset}⟳{cyan}] {reset}Locked        ⮞:{cyan}[{green}{self.locked}{cyan}]{space * (18 - len(str(self.locked)))}〣                                            
 {cyan} 〣⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄⑄〣{reset}
 
 {Fore.LIGHTCYAN_EX} ➤ Checking Will be Completed in › {self.esttime}{reset} ''')
