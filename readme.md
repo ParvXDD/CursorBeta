@@ -1,13 +1,13 @@
 <h1 align="center">
-  CursorBeta by ParvXDD
+  » Cursor Checker by ParvXDD «
 </h1>
 
 [![CodeFactor](https://www.codefactor.io/repository/github/lil-jaba/valchecker/badge/main)](https://www.codefactor.io/repository/github/lil-jaba/valchecker/overview/main)
 <h1 align="center">
-  CursorBeta
+  Cursor Checker
 </h1>
 
-![image](file:///C:/Users/parvt/Downloads/cursor%20checker%20overview.png)
+![image](![image](https://github.com/ParvXDD/CursorBeta/assets/149299708/10ae3ebe-b811-4a16-885f-fff1e8514d03))
 
 <h2 align="center">
   Python program to check your valorant accounts BY ParvXDD
