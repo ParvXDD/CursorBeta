@@ -46,7 +46,7 @@ class program():
         codes = vars(colorama.Fore)
         colors = [codes[color] for color in codes if color not in ['BLACK']]
         colored_name = [random.choice(colors) + char for char in f'CursorBeta by ParvXDD']
-        print(sys.get_spaces_to_center('
+        print(f'''
  ██████╗██╗   ██╗██████╗ ███████╗ ██████╗ ██████╗      ██████╗██╗  ██╗███████╗ ██████╗██╗  ██╗███████╗██████╗ 
 ██╔════╝██║   ██║██╔══██╗██╔════╝██╔═══██╗██╔══██╗    ██╔════╝██║  ██║██╔════╝██╔════╝██║ ██╔╝██╔════╝██╔══██╗
 ██║     ██║   ██║██████╔╝███████╗██║   ██║██████╔╝    ██║     ███████║█████╗  ██║     █████╔╝ █████╗  ██████╔╝
@@ -55,7 +55,7 @@ class program():
  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝     ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
                                            ⇜ Made By ParvXDD ⇝
                                       ↬ https://discord.gg/cursor ↫                               
-                                         « Discord ID: its.parv »
+                                         « Discord ID: its.parv » ''')
         print()
         r = requests.get('https://api.github.com/repos/lil-jaba/valchecker4')
         try:
