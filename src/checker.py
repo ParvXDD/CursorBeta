@@ -159,7 +159,7 @@ class simplechecker():
 
         try:
             self.threadam = int(input(
-                f'input number of threads (min 1 max 1000) (proxies: {self.proxycount}) >>>'))
+                f'➤ Input the Number of Threads for Cursor Checker to Run (Min:1 Max:1000) >>>'))
         except ValueError:
             self.threadam = 1
         self.threadam = self.threadam if 1000 > self.threadam > 0 else self.proxycount if self.proxycount > 1 else 3
@@ -206,7 +206,7 @@ class simplechecker():
                         vlchkr.regions = self.regions
                         vlchkr.savefile()
                     except:
-                        print("Checked all")
+                        print("Cursor Checker has Checked all the Accounts")
 
                 while len(tasks) > 0:
                    tasks = [task for task in tasks if not task.done()]
@@ -257,7 +257,7 @@ class simplechecker():
                     else:
                         # if self.print_sys==True:
                         print(sys.center(
-                            f'{self.max_rlimits} riot limits in a row. skipping'))
+                            f'{self.max_rlimits} Riot limits in a row. Cursor Checker is Skipping'))
                         self.inrlimit -= 1
                         riotlimitinarow = 0
                         self.rlimits += 1
