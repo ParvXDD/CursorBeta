@@ -63,7 +63,7 @@ class program():
         except:
             print(sys.center(f'{Fore.GREEN}Good news! CursorBeta is out!'))
             print(sys.center(f'{Fore.GREEN}Please join the Discord Server to use!'))
-            print(sys.center(f'{Fore.GREEN}https://discord.gg/shx9sTaMr9{Fore.WHITE}'))
+            print(sys.center(f'{Fore.GREEN}https://discord.gg/cursor{Fore.WHITE}'))
         if 'devtest' in self.version:
             print(sys.center(f'{Fore.YELLOW}Greetings from ParvXDD'))
         elif 'beta' in self.version:
@@ -86,11 +86,11 @@ class program():
             '➤ Test the Selected Proxies',
             f'https://discord.gg/cursor',
             Separator(),
-            'Exit'
+            'Close Cursor Checker'
         ]
-        print(sys.center('\Welcome to Cursor Checker!\n'))
+        print(sys.center('Welcome to Cursor Checker!'))
         res = inquirer.select(
-            message="Choose The Feature You Wish To Use:",
+            message="» Select The Feature You Wish To Use:",
             choices=menu_choices,
             default=menu_choices[0],
             pointer='➤',
@@ -98,7 +98,7 @@ class program():
         ).execute()
         if res == menu_choices[1]:
             self.main()
-            input('Cursor Checker Has Finished Checking. Press ENTER to exit the Checker')
+            input('» Cursor Checker Has Finished Checking. Press ENTER to exit the Checker')
             pr.start()
         elif res == menu_choices[2]:
             slchecker = checker.singlelinechecker()
@@ -109,7 +109,7 @@ class program():
             pr.start()
         elif res == menu_choices[4]:
             valid.customsort()
-            input('done. Rress ENTER to exit Cursor Checker')
+            input('done. Press ENTER to exit Cursor Checker')
             pr.start()
         elif res == menu_choices[5]:
             sys.checkproxy()
@@ -117,7 +117,7 @@ class program():
         elif res == menu_choices[6]:
             os.system('cls')
             print(f'''
-    Cursor Checker v{self.version} by ParvXDD
+    [⤲] ➨ Cursor Checker v{self.version} by ParvXDD
 
     If you have any questions about valchecker's source code, feel free to ask me in discord
     https://discord.gg/cursor (its.parv)
@@ -135,7 +135,7 @@ class program():
 
     def get_accounts(self):
         root = tkinter.Tk()
-        file = filedialog.askopenfile(parent=root, mode='rb', title='Select the Accounts File to be checked (login:password)',
+        file = filedialog.askopenfile(parent=root, mode='rb', title='» Select the Accounts File to be checked (login:password)',
                                       filetype=(("txt", "*.txt"), ("All files", "*.txt")))
         root.destroy()
         os.system('cls')
@@ -205,10 +205,10 @@ class program():
                 print('Cursor Checker is Running without Proxies')
 
         if inquirer.confirm(
-            message="⥀ Press n to select the Account's file which needs to be Checked!", default=True
+            message="⥀ Do you wish to check Default Accounts of Cursor Checker!", default=True
         ).execute():
             root = tkinter.Tk()
-            file = filedialog.askopenfile(parent=root, mode='rb', title='Select the file which has to be checked (login:password)',
+            file = filedialog.askopenfile(parent=root, mode='rb', title='» Select the file which has to be checked (login:password)',
                                           filetype=(("vlchkr", "*.vlchkr"), ("All files", "*.vlchkr")))
             root.destroy()
             if file == None:
