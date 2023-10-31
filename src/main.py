@@ -46,12 +46,16 @@ class program():
         codes = vars(colorama.Fore)
         colors = [codes[color] for color in codes if color not in ['BLACK']]
         colored_name = [random.choice(colors) + char for char in f'CursorBeta by ParvXDD']
-        print(sys.get_spaces_to_center('CursorBeta by ParvXDD')+(''.join(colored_name))+colorama.Fore.RESET)
-        print(sys.center(f'v{self.version}'))
-        print(sys.center(f'{Fore.YELLOW}Thank you for using CursorBeta by ParvXDD!'))
-        print(sys.center(f'{Fore.YELLOW}This is the Beta version of CursorBeta released by ParvXDD in Python'))
-        print(sys.center(f'{Fore.YELLOW}Currently Working on STABLE VERSION, so I\'ll notify you when it\'s out'))
-        print(sys.center(f'{Fore.YELLOW}This version of CursorBeta by ParvXDD is available on Discord Server https://discord.gg/shx9sTaMr9'))
+        print(sys.get_spaces_to_center('
+ ██████╗██╗   ██╗██████╗ ███████╗ ██████╗ ██████╗      ██████╗██╗  ██╗███████╗ ██████╗██╗  ██╗███████╗██████╗ 
+██╔════╝██║   ██║██╔══██╗██╔════╝██╔═══██╗██╔══██╗    ██╔════╝██║  ██║██╔════╝██╔════╝██║ ██╔╝██╔════╝██╔══██╗
+██║     ██║   ██║██████╔╝███████╗██║   ██║██████╔╝    ██║     ███████║█████╗  ██║     █████╔╝ █████╗  ██████╔╝
+██║     ██║   ██║██╔══██╗╚════██║██║   ██║██╔══██╗    ██║     ██╔══██║██╔══╝  ██║     ██╔═██╗ ██╔══╝  ██╔══██╗
+╚██████╗╚██████╔╝██║  ██║███████║╚██████╔╝██║  ██║    ╚██████╗██║  ██║███████╗╚██████╗██║  ██╗███████╗██║  ██║
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝     ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+                                           ⇜ Made By ParvXDD ⇝
+                                      ↬ https://discord.gg/cursor ↫                               
+                                         « Discord ID: its.parv »
         print()
         r = requests.get('https://api.github.com/repos/lil-jaba/valchecker4')
         try:
@@ -86,15 +90,15 @@ class program():
         ]
         print(sys.center('\nhttps://github.com/ParvXDD/CursorBeta.git\n'))
         res = inquirer.select(
-            message="Please select an option:",
+            message="C🇭‌🇴‌🇴‌🇸‌🇪‌ T🇭‌🇪‌ F🇪‌🇦‌🇹‌🇺‌🇷‌🇪‌ Y🇴‌🇺‌ W🇮‌🇸‌🇭‌ T🇴‌ U🇸‌🇪‌:",
             choices=menu_choices,
             default=menu_choices[0],
-            pointer='>',
+            pointer='➤',
             qmark=''
         ).execute()
         if res == menu_choices[1]:
             self.main()
-            input('finished checking. press ENTER to exit')
+            input('Cursor Checker Has Finished Checking. Press ENTER to exit the Checker')
             pr.start()
         elif res == menu_choices[2]:
             slchecker = checker.singlelinechecker()
@@ -113,16 +117,16 @@ class program():
         elif res == menu_choices[6]:
             os.system('cls')
             print(f'''
-    valchecker v{self.version} by liljaba1337
+    Cursor Checker v{self.version} by ParvXDD
 
     If you have any questions about valchecker's source code, feel free to ask me in discord
-    https://discord.gg/shx9sTaMr9 (itz.ventro)
+    https://discord.gg/cursor (its.parv)
 
     You can also open pull requests if you have some updates, I will check them all
 
     Happy coding :)
 
-  [~] - press ENTER to return
+  [⤲] ➨ Press the ENTER key to Return!
             ''')
             input()
             pr.start()
@@ -131,7 +135,7 @@ class program():
 
     def get_accounts(self):
         root = tkinter.Tk()
-        file = filedialog.askopenfile(parent=root, mode='rb', title='select file with accounts (login:password)',
+        file = filedialog.askopenfile(parent=root, mode='rb', title='Select the Combos File to be checked (login:password)',
                                       filetype=(("txt", "*.txt"), ("All files", "*.txt")))
         root.destroy()
         os.system('cls')
@@ -143,7 +147,7 @@ class program():
             ret = []
             if len(lines) > 100000:
                 if inquirer.confirm(
-                    message=f"You have more than 100k accounts ({len(lines)}). Do you want to skip the sorting part? (it removes doubles and bad logpasses but can be long)",
+                    message=f"You have more than 100k accounts ({len(lines)}). Do you want to skip the sorting part? [Skipping is Recommended]",
                     default=True,
                     qmark='!',
                     amark='!'
@@ -156,19 +160,19 @@ class program():
                 if logpass not in ret and ':' in logpass:
                     self.count += 1
                     ctypes.windll.kernel32.SetConsoleTitleW(
-                        f'ValChecker {self.version} by liljaba1337 | Loading Accounts ({self.count})')
+                        f'Cursor Checker {self.version} by ParvXDD | Loading the selected Valorant Accounts ({self.count})')
                     ret.append(logpass)
             return ret
 
     def main(self):
         ctypes.windll.kernel32.SetConsoleTitleW(
-            f'ValChecker {self.version} by liljaba1337 | Loading Settings')
-        print('loading settings')
+            f'Cursor Checker {self.version} by ParvXDD | Cursor Checker is Loading the Settings')
+        print('Settings are being loaded into the Checker')
         settings = sys.load_settings()
 
         ctypes.windll.kernel32.SetConsoleTitleW(
-            f'ValChecker {self.version} by liljaba1337 | Loading Proxies')
-        print('loading proxies')
+            f'Cursor Checker {self.version} by ParvXDD | Loading the Selected Proxies')
+        print('Proxies are being loaded in the Checker')
         proxylist = sys.load_proxy()
 
         if proxylist == None:
@@ -176,7 +180,7 @@ class program():
             file_path = f"{os.path.abspath(os.path.join(path, os.pardir))}\\proxy.txt"
 
             print(Fore.YELLOW, end='')
-            response = input('No Proxies Found, Do you want to scrape proxies? (y/n): ')
+            response = input('No amount of proxies have been selected. Do you want Cursor Checker to scrape Proxies? (y/n): ')
             print(Style.RESET_ALL, end='')
 
             if response.lower() == 'y':
@@ -195,16 +199,16 @@ class program():
 
                 # Print number of proxies saved
                 num_proxies = len(proxies)
-                print(f'{num_proxies} Proxies saved to "proxy.txt" file.')
+                print(f'{num_proxies} Selected Proxies have been saved to "proxy.txt" file.')
                 proxylist = sys.load_proxy()
             else:
-                print('Running Proxy Less...')
+                print('Cursor Checker is Running without Proxies')
 
         if inquirer.confirm(
-            message="Do you want to continue checking a .vlchkr file instead of loading a new .txt?", default=True
+            message="⥀ Press n to select the Account's file which needs to be Checked!", default=True
         ).execute():
             root = tkinter.Tk()
-            file = filedialog.askopenfile(parent=root, mode='rb', title='select file with accounts (login:password)',
+            file = filedialog.askopenfile(parent=root, mode='rb', title='Select the file which has to be checked (login:password)',
                                           filetype=(("vlchkr", "*.vlchkr"), ("All files", "*.vlchkr")))
             root.destroy()
             if file == None:
@@ -216,18 +220,18 @@ class program():
         else: 
             valkekersource = None
             ctypes.windll.kernel32.SetConsoleTitleW(
-                f'CursorBeta {self.version} by ParvXDD | Loading Accounts')
-            print('loading accounts')
+                f'CursorBeta {self.version} by ParvXDD | Loading the Selected Accounts')
+            print('Accounts are being loaded in the Checker')
             accounts = self.get_accounts()
 
         print('loading assets')
         ctypes.windll.kernel32.SetConsoleTitleW(
-            f'CursorBeta {self.version} by ParvXDD | Loading Assets')
+            f'CursorBeta {self.version} by ParvXDD | Loading the necessary Assets')
         sys.load_assets()
 
-        print('loading checker')
+        print('⟴ Cursor Checker is Loading Itself!')
         ctypes.windll.kernel32.SetConsoleTitleW(
-            f'CursorBeta {self.version} by ParvXDD | Loading Checker')
+            f'CursorBeta {self.version} by ParvXDD | Loading Cursor Checker')
         scheck = checker.simplechecker(settings, proxylist, self.version)
         asyncio.run(scheck.main(accounts, self.count, valkekersource))
         return
@@ -235,5 +239,5 @@ class program():
 
 pr = program()
 if __name__ == '__main__':
-    print('starting')
+    print('⟴ Cursor Checker is Starting Itself!')
     pr.start()
