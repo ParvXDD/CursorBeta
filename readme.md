@@ -7,7 +7,7 @@
   Cursor Checker
 </h1>
 
-![image](![image](https://github.com/ParvXDD/CursorBeta/assets/149299708/10ae3ebe-b811-4a16-885f-fff1e8514d03))
+[image](https://github.com/ParvXDD/CursorBeta/assets/149299708/10ae3ebe-b811-4a16-885f-fff1e8514d03)
 
 <h2 align="center">
   Python program to check your valorant accounts BY ParvXDD
