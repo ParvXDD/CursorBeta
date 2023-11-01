@@ -20,4 +20,4 @@ Please leave a ⭐  if you like it
 ## [For Installation and Usage Guide Join Discord Server](https://discord.gg/cursor)
 
 
-<a href="https://discord.gg/cursor"><img src="https://discord.com/api/guilds/1085497245471875092/widget.json"></a>
+<a href="https://discord.gg/cursor"><iframe src="https://discord.com/widget?id=1085497245471875092&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>></a>
