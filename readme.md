@@ -19,6 +19,4 @@ Please leave a ⭐  if you like it
 
 ## [For Installation and Usage Guide Join Discord Server](https://discord.gg/cursor)
 
-
-<a href="https://discord.gg/cursor"a>
 ![image](https://github.com/ParvXDD/CursorBeta/assets/149299708/ca36b9cc-4511-4ac9-82d3-7c4f4dbfdbd2)
